@@ -1,3 +1,4 @@
+modules = ["python-3.11"]
 [nix]
 channel = "stable-24_05"
 [replit]
@@ -14,3 +15,7 @@ mode = "sequential"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "python3 app.py"
+
+[[ports]]
+localPort = 5000
+externalPort = 80
